@@ -1,0 +1,58 @@
+.button5 {
+  background-color: white;
+  color: white;
+  border: 2px solid #555555;
+
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+}
+
+
+
+.footer
+{
+background:#303036;
+color:white;
+height:50px;
+postion:relative;
+}
+
+.footer .footer-bottom
+{
+background:#343a40;
+color:#686868;
+height:40px;
+width:100%;
+text-align:center;
+color:white;
+postion:absolute;
+bottom:0px;
+left:0px;
+pading-top:20px;
+}
