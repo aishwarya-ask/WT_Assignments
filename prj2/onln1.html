@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <style>
+        body  {
+          background-image: url("2.jpg");
+          background-color: #cccccc;
+        }
+        </style>
+<meta charset="utf-8">
+<title>JavaScript Form Validation</title>
+<meta name="keywords" content=""/>
+<meta name="description" content="" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="show.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="show.js"></script>
+
+<script src="js_form_validation.js"></script>
+<script src="show.js"></script>
+
+</head>
+<body onload="document.registration.userid.focus();">
+    <h1><center>Registration Form</center></h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="reg.html">Home</a></li>
+            <li><a href="onln1.html">Registration form</a></li>
+            <li><a href="show.html">Show Registrants</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+
+
+<form name='registration' onsubmit="return formValidation();">
+<label for="userid">User id:</label><br/>
+<input type="text" name="userid" size="12" id="id1" /><br/>
+<label for="passid">Password:</label></br/>
+<input type="password" name="passid" size="12" id="pswd" /><br/>
+<label for="username">Name:</label><br/>
+<input type="text" name="username" size="50" id="nme" /><br/>
+<label for="address">Address:</label><br/>
+<input type="text" name="address" size="50" id="address"/><br/>
+<label for="country">Country:</label><br/>
+<select name="country" id="cntry"><br/>
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AFG">Afganistan</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select><br/>
+<label for="zip">ZIP Code:</label><br/>
+<input type="text" name="zip"  id="zcode"/><br/>
+<label for="email">Email:</label><br/>
+<input type="text" name="email" size="50" id="emailId" /><br/>
+<label id="gender">Sex:</label><br/>
+<input type="radio" name="msex" value="Male" id="gen"/><span>Male</span><br/>
+<input type="radio" name="fsex" value="Female" id="gen" /><span>Female</span><br/>
+<label>Language:</label><br/>
+<input type="checkbox" name="en" value="en" checked id="lang"/><span>English</span><br/>
+<input type="checkbox" name="nonen" value="noen" id="lang"/><span>Non English</span><br/>
+<label for="desc">About:</label><br/>
+<textarea name="desc" id="abt"></textarea><br/>
+<input type="submit" name="submit" value="submit" id="btn" class="submit"><br/>
+</form>
+<br>
+<br>
+
+<table border="2" id="show" class="table tableSection d-none">
+    <thead>
+    <tr>
+    <th>User id</th>
+    <th>Pasword</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>country</th>
+    <th>ZIP code</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Language</th>
+    <th>About</th>
+    
+    </tr>
+</thead>
+<tbody class="display" id="list_t">
+
+</tbody>
+    </table>
+
+
+</body>
+</html>
